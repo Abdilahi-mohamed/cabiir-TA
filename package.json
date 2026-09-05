@@ -1,0 +1,19 @@
+{
+  "name": "cabiir",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "web": "npm --prefix frontend run web",
+    "server": "npm --prefix backend start",
+    "server:dev": "npm --prefix backend run dev",
+    "dev:full": "concurrently \"npm --prefix frontend run dev\" \"npm --prefix backend run dev\"",
+    "build": "npm --prefix frontend run build",
+    "lint": "npm --prefix frontend run lint",
+    "preview": "npm --prefix frontend run preview"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}

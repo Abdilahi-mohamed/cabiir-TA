@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768">
+  <rect width="768" height="768" fill="#4c3d98"/>
+  <g transform="translate(144 177) scale(1.5)">
+    <path d="M74 46c19 15 35 17 52 4l-7 36-20-12-2 44c-1 18 13 31 31 31h-35c-22 0-38-16-38-37V57z" fill="#fff"/>
+    <path d="M143 70c26-18 48-26 76-27v25c-16 0-28 5-39 14l31-1v22h-32c-19 0-36 13-38 30-5-4-10-10-13-17-8-18-4-34 15-46z" fill="#d7e832"/>
+    <path d="M99 65l30 19-21 14-19-12z" fill="#d7e832"/>
+    <path d="M114 90c12 8 22 20 22 31 0 16-13 29-29 29s-29-13-29-29c0-11 8-22 18-30l11 11c-7 6-11 12-11 18 0 6 5 11 11 11s11-5 11-11c0-5-4-11-11-18z" fill="#d7e832"/>
+    <text x="160" y="160" text-anchor="middle" font-family="Arial,sans-serif" font-size="31" font-weight="700" fill="#d7e832">CABIIR</text>
+    <text x="160" y="181" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#fff">Travel Agency</text>
+  </g>
+</svg>
