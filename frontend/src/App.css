@@ -1,4 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+.welcome { background:linear-gradient(105deg,#d7e832 0%,#e9f17a 58%,#f5f7c5 100%) !important; border:1px solid #d1df32; }
+.welcome h2 { color:#30256f !important; }
+.welcome .eyebrow { color:#4c3d98 !important; }
+.welcome p { color:#514c13 !important; }
+.welcome-orb { color:#4c3d98 !important; background:#fff9b8cc !important; }
+.app { background:#f8f7fc !important; }
+.topbar { background:#fff !important; border-bottom-color:#e5e0f0 !important; }
+.topbar h1,.welcome h2,.form-heading h2,.table-heading h2 { color:#30256f !important; }
+.eyebrow { color:#6a55b2 !important; }
+.primary { background:#d7e832 !important; border-color:#d7e832 !important; color:#30256f !important; font-weight:700; }
+.primary:hover { background:#c8da28 !important; }
+.header-actions button,.secondary { background:#f0edfb !important; color:#4c3d98 !important; border-color:#d9d0f0 !important; }
+.stat,.quick,.table-wrap,.form-page form { background:#fff !important; border-color:#e5e0f0 !important; }
+.stat-icon.teal { background:#eee9fc !important; color:#4c3d98 !important; }
+.stat-icon.orange { background:#fff9d9 !important; color:#a29b00 !important; }
+.stat-icon.blue { background:#e9e5fa !important; color:#6b58bd !important; }
+.form-badge { background:#fff9d9 !important; color:#766f00 !important; border-color:#e9df76 !important; }
+.action { border-color:#d8d0ef !important; background:#f8f6ff !important; color:#4c3d98 !important; }
+.action:hover { background:#eee9fc !important; }
+.paid-checkbox { accent-color:#d7e832 !important; }
+.sidebar { background:linear-gradient(160deg,#30256f 0%,#4c3d98 52%,#6b58bd 100%) !important; }
+.jidda .sidebar { background:linear-gradient(160deg,#241b58 0%,#4c3d98 52%,#806bd1 100%) !important; }
 .sidebar button,.nav-overview { font-size:15px !important; font-weight:500 !important; }
 .sidebar nav button.active,.side-create.active,.nav-overview.active { font-weight:700 !important; }
 .welcome h2,.form-heading h2,.table-heading h2 { font-size:18px !important; font-weight:700 !important; letter-spacing:0 !important; }

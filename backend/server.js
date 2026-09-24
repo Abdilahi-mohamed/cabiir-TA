@@ -1,4 +1,5 @@
 const express = require('express');
+const dns = require('dns');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const multer = require('multer');
@@ -11,6 +12,8 @@ require('dotenv').config({ path: path.join(__dirname, '.env') });
 const app = express();
 const PORT = process.env.PORT || 5000;
 const JWT_SECRET = process.env.JWT_SECRET || 'cabiir-development-secret-change-me';
+const dnsServers = String(process.env.MONGODB_DNS_SERVERS || '8.8.8.8,1.1.1.1').split(',').map(server => server.trim()).filter(Boolean);
+if (dnsServers.length) dns.setServers(dnsServers);
 const uploads = path.join(__dirname, 'uploads');
 fs.mkdirSync(uploads, { recursive: true });
 app.use(cors());
