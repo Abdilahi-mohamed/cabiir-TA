@@ -4,7 +4,7 @@ Cabiir is a shared travel registration workspace for the Hargeisa and Jidda team
 
 ## Setup
 
-1. Copy `backend/.env.example` to `backend/.env` and set `MONGODB_URI` to your MongoDB connection string.
+1. Set `MONGODB_URI` in `backend/.env` to your MongoDB connection string. For a local MongoDB server, use `mongodb://127.0.0.1:27017/cabiir-ta` and make sure the MongoDB service is running.
 2. Set `JWT_SECRET` and separate Hargeisa/Jidda usernames and passwords in `backend/.env`.
 3. Run `npm install --prefix frontend` and `npm install --prefix backend`.
 4. Run `npm run dev:full` from the project root for the Vite frontend and Express API together.
@@ -12,6 +12,8 @@ Cabiir is a shared travel registration workspace for the Hargeisa and Jidda team
 The frontend is available at `http://localhost:5173` and the API at `http://localhost:5000`.
 
 On first startup, the backend seeds the configured Hargeisa and Jidda manager accounts if their usernames do not already exist. Passwords are stored as bcrypt hashes and never returned by the API.
+
+The API starts even when MongoDB is temporarily unavailable and retries the database connection every five seconds. Database-dependent API requests return `503` until MongoDB is available. Hargeisa managers can create users for either branch from **Create Users**, or create a Hargeisa user from **Register Hargeisa user** on the login page by verifying their own credentials. New users sign in through the existing login form with their own username.
 
 ## Available API routes
 
