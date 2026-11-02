@@ -152,7 +152,7 @@ body {
 }
 
 .sidebar-footer small::after {
-  content: "© 2026 SAVA Travel Agency";
+  content: "© 2026 SAFA Travel Agency";
   font-size: 10px;
 }
 
@@ -196,10 +196,10 @@ body {
   background: linear-gradient(145deg, #ffffff, var(--color-accent-soft));
 }
 
-.sava-logo {
-  width: min(72%, 360px);
+.safa-logo {
+  width: min(82%, 430px);
   aspect-ratio: 2 / 1;
-  background: url("/sava-logo.png") center / contain no-repeat;
+  background: url("/safa-logo.png") center / contain no-repeat;
   filter: drop-shadow(0 16px 15px #0b192c24);
 }
 

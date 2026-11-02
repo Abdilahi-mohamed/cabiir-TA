@@ -1,10 +1,10 @@
-# SAVA Travel Agency
+# SAFA Travel Agency
 
-SAVA Travel Agency is a shared travel registration workspace for the Hargeisa and Jidda teams. Both dashboards use the same Express API and MongoDB collections.
+SAFA Travel Agency is a shared travel registration workspace for the Hargeisa and Jidda teams. Both dashboards use the same Express API and MongoDB collections.
 
 ## Setup
 
-1. Set `MONGODB_URI` in `backend/.env` to your MongoDB connection string. For a local MongoDB server, use `mongodb://127.0.0.1:27017/safa-travel-agency` and make sure the MongoDB service is running.
+1. Set `MONGODB_URI` in `backend/.env` to your MongoDB connection string. For a local MongoDB server, use `mongodb://127.0.0.1:27017/safa-travel-agency` and make sure the MongoDB service is running. On Windows, start it from an elevated PowerShell with `Start-Service MongoDB`.
 2. Set `JWT_SECRET` and separate Hargeisa/Jidda usernames and passwords in `backend/.env`.
 3. Run `npm install --prefix frontend` and `npm install --prefix backend`.
 4. Run `npm run dev:full` from the project root for the Vite frontend and Express API together.
