@@ -257,5 +257,5 @@ body {
 }
 
 .auth-switch {
-  display: none;
+  display: block;
 }

@@ -13,7 +13,7 @@ The frontend is available at `http://localhost:5173` and the API at `http://loca
 
 On first startup, the backend seeds the configured Hargeisa and Jidda manager accounts if their usernames do not already exist. Passwords are stored as bcrypt hashes and never returned by the API.
 
-The API starts even when MongoDB is temporarily unavailable and retries the database connection every five seconds. Database-dependent API requests return `503` until MongoDB is available. Only signed-in Hargeisa managers can create Hargeisa accounts from **Create Users**. The account form has a username, password, and password confirmation. New users sign in through the existing login form with their own username.
+The API starts even when MongoDB is temporarily unavailable and retries the database connection every five seconds. Database-dependent API requests return `503` until MongoDB is available. The **Register user** action on the login page requires Hargeisa manager credentials and creates a Hargeisa account. From **Create Users** in the Hargeisa dashboard, managers can create either Hargeisa or Jidda accounts. New users sign in through the existing login form with their own username.
 
 ## Available API routes
 
