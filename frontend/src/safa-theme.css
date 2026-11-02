@@ -1,0 +1,280 @@
+:root {
+  --color-bg: #ffffff;
+  --color-text-main: #0b192c;
+  --color-primary: #059669;
+  --color-primary-hover: #047857;
+  --color-accent-soft: #e0f2fe;
+  --color-success: #059669;
+  --color-warning: #d97706;
+  --color-error: #dc2626;
+  --ink: var(--color-text-main);
+  --muted: #64748b;
+  --line: #e2e8f0;
+  --teal: var(--color-primary);
+  --paper: var(--color-bg);
+}
+
+body {
+  color: var(--color-text-main);
+  background: var(--color-bg);
+}
+
+.app {
+  background: var(--color-bg) !important;
+}
+
+.sidebar,
+.jidda .sidebar {
+  background: linear-gradient(160deg, #0b192c, #142b46) !important;
+}
+
+.nav-label {
+  color: #bae6fd !important;
+}
+
+.brand-mark {
+  border-color: #6ee7b7;
+}
+
+.welcome {
+  background: linear-gradient(110deg, #e0f2fe, #f8fcff 70%) !important;
+  border-color: #bae6fd !important;
+}
+
+.welcome h2,
+.form-heading h2,
+.table-heading h2,
+.topbar h1 {
+  color: var(--color-text-main) !important;
+}
+
+.welcome .eyebrow,
+.eyebrow {
+  color: #047857 !important;
+}
+
+.welcome p {
+  color: #475569 !important;
+}
+
+.welcome-orb {
+  color: var(--color-primary) !important;
+  background: #ffffffcc !important;
+}
+
+.primary {
+  background: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: #ffffff !important;
+}
+
+.primary:hover {
+  background: var(--color-primary-hover) !important;
+  border-color: var(--color-primary-hover) !important;
+}
+
+.header-actions button,
+.secondary {
+  background: var(--color-accent-soft) !important;
+  color: var(--color-text-main) !important;
+  border-color: #bae6fd !important;
+}
+
+.stat,
+.quick,
+.table-wrap,
+.form-page form {
+  background: var(--color-bg) !important;
+  border-color: var(--line) !important;
+}
+
+.stat-icon.teal {
+  background: #d1fae5 !important;
+  color: var(--color-primary) !important;
+}
+
+.stat-icon.orange {
+  background: #ffedd5 !important;
+  color: var(--color-warning) !important;
+}
+
+.stat-icon.blue {
+  background: var(--color-accent-soft) !important;
+  color: #075985 !important;
+}
+
+.form-badge {
+  background: var(--color-accent-soft) !important;
+  color: #075985 !important;
+  border-color: #bae6fd !important;
+}
+
+.action,
+.action:hover {
+  border-color: #a7f3d0 !important;
+  background: #ecfdf5 !important;
+  color: var(--color-primary-hover) !important;
+}
+
+.action.danger,
+.action.danger:hover {
+  color: var(--color-error) !important;
+  border-color: #fecaca !important;
+  background: #fef2f2 !important;
+}
+
+.paid-checkbox {
+  accent-color: var(--color-primary) !important;
+}
+
+.sidebar nav button.active,
+.side-create.active,
+.nav-overview.active {
+  box-shadow: inset 3px 0 var(--color-primary) !important;
+}
+
+.brand > div > strong,
+.sidebar-footer small {
+  font-size: 0 !important;
+}
+
+.brand > div > strong::after {
+  content: "Safa Travel Agency";
+  font-size: 16px;
+}
+
+.sidebar-footer small::after {
+  content: "© 2026 Safa Travel Agency";
+  font-size: 10px;
+}
+
+.brand-mark {
+  font-size: 0 !important;
+  color: transparent !important;
+  position: relative;
+}
+
+.brand-mark::after {
+  content: "S";
+  position: absolute;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.has-dashboard-logo .app .brand-mark::after {
+  content: none;
+}
+
+.landing {
+  color: var(--color-text-main);
+  background: linear-gradient(135deg, #ffffff, #f0f9ff);
+}
+
+.landing-header {
+  background: #ffffffed;
+  border-bottom-color: var(--line);
+}
+
+.landing-brand {
+  color: var(--color-text-main);
+}
+
+.landing-brand .brand-mark {
+  border-color: #6ee7b7;
+  background: var(--color-primary);
+}
+
+.landing-brand .brand-mark::after {
+  color: #ffffff;
+}
+
+.landing-header nav button,
+.auth-switch,
+.auth-back {
+  color: var(--color-primary-hover);
+}
+
+.hero-copy h1 b {
+  color: var(--color-primary);
+}
+
+.hero-copy p {
+  color: #475569;
+}
+
+.logo-panel {
+  background: linear-gradient(145deg, #ffffff, var(--color-accent-soft));
+}
+
+.safa-logo {
+  width: min(72%, 360px);
+  aspect-ratio: 320 / 190;
+  background: url("/safa-logo.svg") center / contain no-repeat;
+  filter: drop-shadow(0 16px 15px #0b192c24);
+}
+
+.route {
+  color: var(--color-primary-hover);
+}
+
+.auth-page {
+  background: radial-gradient(circle at 15% 15%, #e0f2fe, transparent 35%), #f8fafc;
+}
+
+.auth-card {
+  border-color: var(--line);
+  box-shadow: 0 22px 60px #0b192c14;
+}
+
+.auth-logo {
+  color: var(--color-text-main);
+}
+
+.auth-logo strong {
+  font-size: 0 !important;
+}
+
+.auth-logo strong::after {
+  content: "Safa Travel Agency";
+  font-size: 21px;
+}
+
+.auth-logo .brand-mark {
+  border-color: #a7f3d0;
+  background: #ecfdf5;
+}
+
+.auth-logo .brand-mark::after {
+  color: var(--color-primary);
+}
+
+.auth-card h1 {
+  color: var(--color-text-main);
+}
+
+.auth-card > p {
+  color: var(--muted);
+}
+
+.auth-card label span {
+  color: #334155;
+}
+
+.auth-card input,
+.auth-card select {
+  border-color: #cbd5e1;
+  color: var(--color-text-main);
+  outline-color: var(--color-primary);
+}
+
+.auth-error {
+  color: var(--color-error);
+}
+
+.auth-success {
+  color: var(--color-success);
+}
+
+.auth-switch {
+  display: none;
+}
