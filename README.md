@@ -1,6 +1,6 @@
-# Safa Travel Agency
+# SAVA Travel Agency
 
-Safa Travel Agency is a shared travel registration workspace for the Hargeisa and Jidda teams. Both dashboards use the same Express API and MongoDB collections.
+SAVA Travel Agency is a shared travel registration workspace for the Hargeisa and Jidda teams. Both dashboards use the same Express API and MongoDB collections.
 
 ## Setup
 

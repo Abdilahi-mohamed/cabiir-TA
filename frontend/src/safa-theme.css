@@ -133,36 +133,27 @@ body {
   box-shadow: inset 3px 0 var(--color-primary) !important;
 }
 
-.brand > div > strong,
 .sidebar-footer small {
   font-size: 0 !important;
 }
 
-.brand > div > strong::after {
-  content: "Safa Travel Agency";
-  font-size: 16px;
+.brand {
+  min-height: 76px;
+}
+
+.brand-image {
+  display: block;
+  width: 100%;
+  max-width: 205px;
+  height: 72px;
+  object-fit: contain;
+  background: #ffffff;
+  border-radius: 8px;
 }
 
 .sidebar-footer small::after {
-  content: "© 2026 Safa Travel Agency";
+  content: "© 2026 SAVA Travel Agency";
   font-size: 10px;
-}
-
-.brand-mark {
-  font-size: 0 !important;
-  color: transparent !important;
-  position: relative;
-}
-
-.brand-mark::after {
-  content: "S";
-  position: absolute;
-  color: #ffffff;
-  font-size: 24px;
-}
-
-.has-dashboard-logo .app .brand-mark::after {
-  content: none;
 }
 
 .landing {
@@ -179,13 +170,12 @@ body {
   color: var(--color-text-main);
 }
 
-.landing-brand .brand-mark {
-  border-color: #6ee7b7;
-  background: var(--color-primary);
-}
-
-.landing-brand .brand-mark::after {
-  color: #ffffff;
+.landing-brand img {
+  display: block;
+  width: 190px;
+  height: 58px;
+  object-fit: contain;
+  border-radius: 6px;
 }
 
 .landing-header nav button,
@@ -206,10 +196,10 @@ body {
   background: linear-gradient(145deg, #ffffff, var(--color-accent-soft));
 }
 
-.safa-logo {
+.sava-logo {
   width: min(72%, 360px);
-  aspect-ratio: 320 / 190;
-  background: url("/safa-logo.svg") center / contain no-repeat;
+  aspect-ratio: 2 / 1;
+  background: url("/sava-logo.png") center / contain no-repeat;
   filter: drop-shadow(0 16px 15px #0b192c24);
 }
 
@@ -228,24 +218,15 @@ body {
 
 .auth-logo {
   color: var(--color-text-main);
+  justify-content: center;
 }
 
-.auth-logo strong {
-  font-size: 0 !important;
-}
-
-.auth-logo strong::after {
-  content: "Safa Travel Agency";
-  font-size: 21px;
-}
-
-.auth-logo .brand-mark {
-  border-color: #a7f3d0;
-  background: #ecfdf5;
-}
-
-.auth-logo .brand-mark::after {
-  color: var(--color-primary);
+.auth-logo img {
+  display: block;
+  width: min(100%, 260px);
+  height: 120px;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
 .auth-card h1 {
